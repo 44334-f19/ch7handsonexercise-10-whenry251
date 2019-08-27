@@ -12,6 +12,8 @@ body { margin:0;
              color: #006600;
              min-width: 960px;
              font-family: Verdana, Arial, sans-serif; }
+#handson {display: flex;
+            flex-direction: row;}
 header { background-color: #636631;
          background-image: url(showybg.jpg);
          background-position: bottom;
@@ -21,15 +23,14 @@ header { background-color: #636631;
          text-align: right;
          padding: 0 20px;
          border-bottom: 2px solid #000000; }		 
-nav { float: left;
-      width: 150px; }
-aside { float: right;
-        width: 200px; }
-main { margin: 0 210px 0 160px;
-        padding: 1px 10px 20px 10px;
+nav {flex: 1;}
+aside {flex: 2;
+        order: 1;}
+main {padding: 1px 10px 20px 10px;
         background-color: #FFFFFF;
-        color: #006600; }
-footer { font-size: .70em;
+        color: #006600; 
+        flex: 7;}
+footer {font-size: .70em;
          text-align: center;
          color: #006600;
          background-color: #FFFFFF;
@@ -71,6 +72,7 @@ aside h3 { padding-bottom: 2px;
     <span><a href="#content">Skip to Content</a></span>
     <h1>Door County Wildflowers</h1>
   </header>
+<div id="handson">
   <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -96,9 +98,10 @@ Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday.
     <img src="trillium.jpg" width="200" height="150" alt="Trillium" id="floatright">
     <h3>Explore the beauty <br>of Door County Wildflowers. . . .</h3>
     <p>With five state parks, tons of county parks, and private nature sanctuaries, Door County is teeming with natural areas for you to stalk your favorite wildflowers.</p>
+  </main>
+    </div>
+    </div>   
     <footer> Copyright &copy; 2018 Door County Wild Flowers<br>
     </footer>
-  </main>
-</div> 
 </body>
 </html>
